@@ -22,7 +22,8 @@ and open the template in the editor.
         $name = "Jack";
         $surname = "Mark";
         
-        echo $name . $surname;
+       // echo $name . $surname;
+        echo $$surname;
         
         if ($name == "Jack") {
                 echo "</br> <h4>$surname</h4>";
