@@ -13,8 +13,11 @@
 $x=10;
 $y=20;
 
-//echo $y += ++$x;
-echo $y +=$x++;
+echo "3.1 Result is " . $y += ++$x;
+
+$x1 = 10;
+$y1 = 20;
+echo "<br/> 3.2 Result is " . $y1 +=$x1++;
  ?>
     </body>
 </html>
