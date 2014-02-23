@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <style type="text/css">
+            #body {
+                width: 95%;
+                margin: auto;
+            }
+            .p{
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="php_week4_test4.php" method ="GET" class="form-group">
+            First Name <input type="text" name="firstname" class="form-control"><p>
+            Last Name <input type="text" name="lastname"><p>
+            Password <input type="password" name="pwd"><br>
+            Gender <p><input type="radio" name="gender" value="Male" />Male<br>
+            <input type="radio" name="gender" value="female" />Female<hr>
+            Education <select name="education">
+                <option value ="1">Smaller than Bachelor</option>
+                <option value ="2">Bachelor</option>
+                <option value ="3">Master</option>
+                <option value ="4">Ph.D</option>
+            </select><br>
+            <p>Your car:</p>
+            <input type="checkbox" name ="verhicle" value ="bike"> I have a bike<br>
+            <input type="checkbox" name ="verhicle" value ="Car"> I have a car<br>
+            <p>Your comment</p>
+            <textarea name="comment"></textarea><br>
+            <p>Your file</p>
+            <!--<input type ="file" name ="datafile" size ="40" class="btn btn-info"><br>-->
+            <input type ="file" name ="datafile" class="btn btn-info"><br>
+            <input type ="submit" name ="send" class ="btn btn-success" value ="Submit">
+            <input type ="reset" name ="reset" class ="btn btn-danger" value ="Cancel">
+        </form>
+    </body>
+</html>
